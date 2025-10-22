@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Hide original documents section from sale order report -->
+    <template id="hide_original_documents" inherit_id="sale.report_saleorder">
+        <xpath expr="//div[contains(@class, 'attachment')]" position="replace">
+            <!-- Completely remove original attachments section -->
+        </xpath>
+
+        <xpath expr="//div[contains(@class, 'document')]" position="replace">
+            <!-- Completely remove original documents section -->
+        </xpath>
+    </template>
+</odoo>
